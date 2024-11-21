@@ -7,6 +7,8 @@ final class CheckoutState {}
 
 final class CheckoutIntialState extends CheckoutState {}
 
+final class ChoosePaymentMethodState extends CheckoutState {}
+
 final class CheckoutLoading extends CheckoutState {}
 
 final class CheckoutLoaded extends CheckoutState {}

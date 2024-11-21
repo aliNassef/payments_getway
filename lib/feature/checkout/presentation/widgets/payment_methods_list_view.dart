@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import '../manger/checkout_cubit.dart';
 import 'payment_method_item.dart';
 
 class PaymentMethodsListView extends StatefulWidget {
@@ -29,6 +31,7 @@ class _PaymentMethodsListViewState extends State<PaymentMethodsListView> {
             child: GestureDetector(
               onTap: () {
                 activeIndex = index;
+                context.read<CheckoutCubit>().choosePaymentMethod(index);
                 setState(() {});
               },
               child: PaymentMethodItem(

@@ -10,6 +10,13 @@ import 'checkout_state.dart';
 class CheckoutCubit extends Cubit<CheckoutState> {
   CheckoutCubit(this._checkoutRepo) : super(CheckoutIntialState());
   final CheckoutRepo _checkoutRepo;
+
+  int index = 0;
+  void choosePaymentMethod(int index) {
+    this.index = index;
+    emit(ChoosePaymentMethodState());
+  }
+
   Future<void> makePaymentWithStripe(
       {required PaymentIntentInputModel paymentIntentInputModel}) async {
     emit(CheckoutLoading());

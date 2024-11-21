@@ -8,6 +8,7 @@ import 'package:payments_getway/feature/checkout/presentation/views/thank_view.d
 import '../../../../core/widgets/custom_button.dart';
 import '../../data/model/item_list_model/item.dart';
 import '../../data/model/item_list_model/item_list_model.dart';
+import '../../data/model/payment_intent_input_model/payment_intent_input_model.dart';
 import '../manger/checkout_cubit.dart';
 import '../manger/checkout_state.dart';
 
@@ -43,27 +44,29 @@ class BlocConsmerCustomButton extends StatelessWidget {
       builder: (context, state) {
         return CustomButton(
           onTap: () {
-            // var getTransactionsData = getTransactionData();
-
-            // // int amount = 100 * 100;
-            // // final paymentIntentInputModel = PaymentIntentInputModel(
-            // //   amount: amount.toString(),
-            // //   currency: 'USD',
-            // //   customerId: 'cus_REcIxPTKGjKQGc',
-            // // );
-            // // context
-            // //     .read<CheckoutCubit>()
-            // //     .makePayment(paymentIntentInputModel: paymentIntentInputModel);
-            // executePaybalPayment(context, getTransactionsData);
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (_) => BlocProvider.value(
-                  value: context.read<CheckoutCubit>(),
-                  child: PaymentsMethodView(),
+            if (context.read<CheckoutCubit>().index == 2) {
+              var getTransactionsData = getTransactionData();
+              executePaybalPayment(context, getTransactionsData);
+            } else if (context.read<CheckoutCubit>().index == 1) {
+              int amount = 100 * 100;
+              final paymentIntentInputModel = PaymentIntentInputModel(
+                amount: amount.toString(),
+                currency: 'USD',
+                customerId: 'cus_REcIxPTKGjKQGc',
+              );
+              context.read<CheckoutCubit>().makePaymentWithStripe(
+                  paymentIntentInputModel: paymentIntentInputModel);
+            } else {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => BlocProvider.value(
+                    value: context.read<CheckoutCubit>(),
+                    child: PaymentsMethodView(),
+                  ),
                 ),
-              ),
-            );
+              );
+            }
           },
           isLoading: state is CheckoutLoading,
           text: 'Continue',
