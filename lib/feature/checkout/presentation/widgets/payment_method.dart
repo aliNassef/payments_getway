@@ -32,7 +32,7 @@ class PaymentMethod extends StatelessWidget {
         onTap: () async {
           var fawaterkInputModel = FawaterkInputModel(
             paymentMethodId: 3,
-            cartTotal: '50',
+            cartTotal: '200',
             currency: 'EGP',
           );
 

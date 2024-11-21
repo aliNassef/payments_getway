@@ -58,8 +58,8 @@ class FwatrekPayment {
         "pendingUrl": "https://dev.fawaterk.com/pending"
       },
       "cartItems": [
-        {"name": "this is test oop 112252", "price": "25", "quantity": "1"},
-        {"name": "this is test oop 112252", "price": "25", "quantity": "1"}
+        {"name": "this is test oop 112252", "price": "25", "quantity": "4"},
+        {"name": "this is test oop 112252", "price": "25", "quantity": "4"}
       ]
     };
 
