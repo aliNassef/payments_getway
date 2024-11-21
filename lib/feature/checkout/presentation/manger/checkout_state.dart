@@ -1,5 +1,6 @@
 import 'package:payments_getway/feature/checkout/data/model/fawatrek_model/fawatrek_model.dart';
 import 'package:payments_getway/feature/checkout/data/model/fawry_model/fawry_model.dart';
+import 'package:payments_getway/feature/checkout/data/model/masary_model/masary_model.dart';
 import 'package:payments_getway/feature/checkout/data/model/master_card_model/master_card_model.dart';
 
 final class CheckoutState {}
@@ -32,4 +33,10 @@ final class CheckoutFawryCode extends CheckoutState {
   final FawryModel fawryModel;
 
   CheckoutFawryCode({required this.fawryModel});
+}
+
+final class CheckoutMasaryCode extends CheckoutState {
+  final MasaryModel masaryModel;
+
+  CheckoutMasaryCode({required this.masaryModel});
 }

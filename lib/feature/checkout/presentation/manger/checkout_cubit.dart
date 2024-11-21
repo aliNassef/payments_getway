@@ -46,11 +46,23 @@ class CheckoutCubit extends Cubit<CheckoutState> {
     );
     data.fold(
       (ifLeft) => emit(CheckoutError(message: ifLeft.errMessage)),
-      (ifRight) => emit(
-        CheckoutsendPaymentFawatrek(
-          masterCardModel: ifRight,
-        ),
-      ),
+      (ifRight) {
+        if (fawaterkInputModel.paymentMethodId == 2) {
+          emit(
+            CheckoutsendPaymentFawatrek(
+              masterCardModel: ifRight,
+            ),
+          );
+        } else if (fawaterkInputModel.paymentMethodId == 14) {
+          emit(
+            CheckoutMasaryCode(masaryModel: ifRight),
+          );
+        } else if (fawaterkInputModel.paymentMethodId == 3) {
+          emit(
+            CheckoutFawryCode(fawryModel: ifRight),
+          );
+        }
+      },
     );
   }
 
