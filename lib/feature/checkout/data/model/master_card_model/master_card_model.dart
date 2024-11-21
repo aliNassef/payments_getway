@@ -20,3 +20,4 @@ class MasterCardModel {
         'data': data?.toJson(),
       };
 }
+// {status: success, data: {invoice_id: 1045002, invoice_key: YQG0RlTuy5ysny4, payment_data: {redirectTo: https://staging.fawaterk.com/lk/27555}}}

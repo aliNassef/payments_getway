@@ -39,6 +39,10 @@ class PaymentMethodItem extends StatelessWidget {
         child: Center(
           child: SvgPicture.asset(
             image,
+            colorFilter: image == 'assets/fawaterk.svg'
+                ? ColorFilter.mode(
+                    const Color.fromARGB(255, 3, 2, 72), BlendMode.srcIn)
+                : null,
           ),
         ),
       ),

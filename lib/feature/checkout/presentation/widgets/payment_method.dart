@@ -31,10 +31,10 @@ class PaymentMethod extends StatelessWidget {
       child: ListTile(
         onTap: () async {
           var fawaterkInputModel = FawaterkInputModel(
-            paymentMethodId: 3,
+            paymentMethodId: data.paymentId!,
             cartTotal: '200',
             currency: 'EGP',
-          );
+        );
 
           Navigator.of(context).push(
             MaterialPageRoute(
@@ -44,6 +44,7 @@ class PaymentMethod extends StatelessWidget {
                     fawaterkInputModel: fawaterkInputModel,
                   ),
                 child: Builder(builder: (context) {
+                  log(data.paymentId!.toString());
                   return Scaffold(
                     body: BlocBuilder<CheckoutCubit, CheckoutState>(
                       buildWhen: (previous, current) =>

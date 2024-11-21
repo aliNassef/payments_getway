@@ -47,7 +47,11 @@ class CheckoutCubit extends Cubit<CheckoutState> {
     data.fold(
       (ifLeft) => emit(CheckoutError(message: ifLeft.errMessage)),
       (ifRight) {
-        if (fawaterkInputModel.paymentMethodId == 2) {
+        if (fawaterkInputModel.paymentMethodId == 2 ||
+            fawaterkInputModel.paymentMethodId == 30 ||
+            fawaterkInputModel.paymentMethodId == 11 ||
+            fawaterkInputModel.paymentMethodId == 6 ||
+            fawaterkInputModel.paymentMethodId == 7) {
           emit(
             CheckoutsendPaymentFawatrek(
               masterCardModel: ifRight,

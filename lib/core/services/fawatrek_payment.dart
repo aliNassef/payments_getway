@@ -46,10 +46,10 @@ class FwatrekPayment {
       "currency": fawaterkInputModel.currency,
       "invoice_number": "123",
       "customer": {
-        "first_name": "test",
-        "last_name": "aliiiii",
-        "email": "aliii@fawaterk.com",
-        "phone": "012226448450",
+        "first_name": "test2",
+        "last_name": "aliii",
+        "email": "alia@fawaterk.com",
+        "phone": "012236438450",
         "address": "test address"
       },
       "redirectionUrls": {
@@ -78,7 +78,11 @@ class FwatrekPayment {
       );
       log(response.data.toString());
 
-      if (fawaterkInputModel.paymentMethodId == 2) {
+      if (fawaterkInputModel.paymentMethodId == 2 ||
+          fawaterkInputModel.paymentMethodId == 30 ||
+          fawaterkInputModel.paymentMethodId == 11 ||
+          fawaterkInputModel.paymentMethodId == 6 ||
+          fawaterkInputModel.paymentMethodId == 7) {
         return MasterCardModel.fromJson(response.data);
       } else if (fawaterkInputModel.paymentMethodId == 3) {
         return FawryModel.fromJson(response.data);
@@ -91,4 +95,4 @@ class FwatrekPayment {
     }
   }
 }
-// "This exception was thrown because the response has a status code of 422 and RequestOptions.validateStatus was configured to thro…"
+ // 6
