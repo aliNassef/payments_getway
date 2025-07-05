@@ -1,4 +1,4 @@
-import 'package:payments_getway/feature/checkout/data/model/masary_model/masary_data.dart';
+import 'masary_data.dart';
 
 class MasaryModel {
   String? status;

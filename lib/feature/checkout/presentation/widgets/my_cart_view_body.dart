@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:payments_getway/feature/checkout/presentation/widgets/product_items_list.dart';
+import 'product_items_list.dart';
 import '../../../../core/widgets/custom_button.dart';
 import '../../data/repo/checkout_repo_impl.dart';
 import '../manger/checkout_cubit.dart';

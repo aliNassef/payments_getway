@@ -1,4 +1,4 @@
-import 'package:payments_getway/feature/checkout/data/model/masary_model/payment_data.dart';
+import 'payment_data.dart';
 
 class Data {
   int? invoiceId;

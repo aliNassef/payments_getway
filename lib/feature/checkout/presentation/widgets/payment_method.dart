@@ -2,9 +2,9 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:payments_getway/feature/checkout/data/model/fawatrek_model/datum.dart';
-import 'package:payments_getway/feature/checkout/presentation/manger/checkout_cubit.dart';
-import 'package:payments_getway/feature/checkout/presentation/manger/checkout_state.dart';
+import '../../data/model/fawatrek_model/datum.dart';
+import '../manger/checkout_cubit.dart';
+import '../manger/checkout_state.dart';
 
 import '../../data/model/fawaterk_input_model/fawaterk_input_model.dart';
 import '../../data/repo/checkout_repo_impl.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:payments_getway/core/utils/app_styles.dart';
+import '../../../../core/utils/app_styles.dart';
 
 class ProductItem extends StatelessWidget {
   const ProductItem({super.key, required this.img, required this.title});

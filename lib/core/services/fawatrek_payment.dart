@@ -1,10 +1,10 @@
 import 'dart:developer';
 
 import 'package:dio/dio.dart';
-import 'package:payments_getway/feature/checkout/data/model/fawatrek_model/fawatrek_model.dart';
-import 'package:payments_getway/feature/checkout/data/model/fawry_model/fawry_model.dart';
-import 'package:payments_getway/feature/checkout/data/model/masary_model/masary_model.dart';
-import 'package:payments_getway/feature/checkout/data/model/master_card_model/master_card_model.dart';
+import '../../feature/checkout/data/model/fawatrek_model/fawatrek_model.dart';
+import '../../feature/checkout/data/model/fawry_model/fawry_model.dart';
+import '../../feature/checkout/data/model/masary_model/masary_model.dart';
+import '../../feature/checkout/data/model/master_card_model/master_card_model.dart';
 
 import '../../feature/checkout/data/model/fawaterk_input_model/fawaterk_input_model.dart';
 
@@ -46,10 +46,10 @@ class FwatrekPayment {
       "currency": fawaterkInputModel.currency,
       "invoice_number": "123",
       "customer": {
-        "first_name": "test2",
-        "last_name": "aliii",
-        "email": "alia@fawaterk.com",
-        "phone": "012236438450",
+        "first_name": "AliNassef",
+        "last_name": "Ibrahem",
+        "email": "alinassef1@fawaterk.com",
+        "phone": "01142466363",
         "address": "test address"
       },
       "redirectionUrls": {

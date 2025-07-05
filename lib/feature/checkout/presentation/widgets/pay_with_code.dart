@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:payments_getway/core/utils/app_styles.dart';
+import '../../../../core/utils/app_styles.dart';
 
 class PayWithCode extends StatelessWidget {
   const PayWithCode({super.key, required this.code, this.expireDate});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:payments_getway/core/widgets/custom_button.dart';
-import 'package:payments_getway/feature/checkout/presentation/views/my_card_view.dart';
+import '../../../../core/widgets/custom_button.dart';
+import 'my_card_view.dart';
 
 import '../../../../core/utils/app_styles.dart';
 

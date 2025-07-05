@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:payments_getway/feature/checkout/data/model/fawaterk_input_model/fawaterk_input_model.dart';
+import '../../data/model/fawaterk_input_model/fawaterk_input_model.dart';
 import '../../data/repo/checkout_repo.dart';
 
 import '../../data/model/payment_intent_input_model/payment_intent_input_model.dart';

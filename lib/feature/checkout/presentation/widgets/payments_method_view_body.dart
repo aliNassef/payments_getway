@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:payments_getway/feature/checkout/data/model/fawatrek_model/fawatrek_model.dart';
+import '../../data/model/fawatrek_model/fawatrek_model.dart';
 
 import 'payment_method.dart';
 

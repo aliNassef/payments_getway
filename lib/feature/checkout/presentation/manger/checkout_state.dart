@@ -1,7 +1,7 @@
-import 'package:payments_getway/feature/checkout/data/model/fawatrek_model/fawatrek_model.dart';
-import 'package:payments_getway/feature/checkout/data/model/fawry_model/fawry_model.dart';
-import 'package:payments_getway/feature/checkout/data/model/masary_model/masary_model.dart';
-import 'package:payments_getway/feature/checkout/data/model/master_card_model/master_card_model.dart';
+import '../../data/model/fawatrek_model/fawatrek_model.dart';
+import '../../data/model/fawry_model/fawry_model.dart';
+import '../../data/model/masary_model/masary_model.dart';
+import '../../data/model/master_card_model/master_card_model.dart';
 
 final class CheckoutState {}
 

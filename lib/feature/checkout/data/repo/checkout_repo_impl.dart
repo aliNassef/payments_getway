@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:payments_getway/feature/checkout/data/model/fawaterk_input_model/fawaterk_input_model.dart';
-import 'package:payments_getway/feature/checkout/data/model/fawatrek_model/fawatrek_model.dart';
+import '../model/fawaterk_input_model/fawaterk_input_model.dart';
+import '../model/fawatrek_model/fawatrek_model.dart';
 import '../../../../core/errors/failure.dart';
 import '../../../../core/services/fawatrek_payment.dart';
 import '../../../../core/services/stripe_payments.dart';

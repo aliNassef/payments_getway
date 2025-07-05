@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
-import 'package:payments_getway/feature/checkout/presentation/views/my_card_view.dart';
+import 'feature/checkout/presentation/views/my_card_view.dart';
 import 'core/utils/constants.dart';
 
 void main() async {
